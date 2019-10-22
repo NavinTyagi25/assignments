@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            font-family: 'Tangerine', cursive;
+        }
+
+        .main-section {
+            background-image: url("https://dummyimage.com/1024x1024/000/000"); 
+            background-color: #111;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .heading-section {
+            font-size: 48px;
+
+        }
+
+        .heading-section::after,
+        .body-section::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        .clear {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .primary-heading {
+            color: #d1ab26;
+            font-size: 40px;
+
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+
+
+        hr {
+            width: 75%;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+
+        .body-section {
+           
+            font-size: 32px;
+            width: 70%;
+            color: #c2c2c2;
+
+        }
+
+        .testimonials-section {
+            width: 85%;
+        }
+        .testimonials-section .testimonial img {
+            margin: auto;
+            float: none;
+            display: block;
+            width: 250px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+        }
+
+        .testimonials-section .testimonial-descrition {
+            font-size: 24px;
+            color: #111;
+            background-color: #fff;
+            padding: 5px;
+            /* margin-left: -16px;  */
+        }
+
+        .arrow-moblie {
+            font-size: 77px;
+            color: #fff;
+            margin: 0;
+            height: 88px;
+            content: '&#9650';
+        }
+
+        .arrow {
+            display: none;
+        }
+
+        .u-margin {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+
+        .testimonials-section .testimonial {
+                display: flex;
+                flex-direction: column;
+        }
+
+        .heading-section {
+                margin-bottom: 20px;
+            }
+
+            .body-section {
+                margin-bottom: 20px;
+            } 
+        .testimonial-secondary__descrition {
+            color: #c2c2c2;
+            font-size: 18px;
+        }    
+
+        @media screen and (min-width:1024px){
+
+            .main-section {
+                height: 100vw;
+            }
+
+            .arrow {
+                font-size: 77px;
+                color: #fff;
+                margin: 0;
+                height: 88px;
+                display: block;
+                content: '&#9650';
+                margin-top: 100px;
+
+            }
+
+            .arrow-moblie {
+                display: none;
+            }
+
+            .testimonials-section .testimonial-descrition {
+                margin-left: -16px;
+                margin-right: 30px;
+                height: auto;
+            }
+
+            .testimonials-section .testimonial img {
+                width: 319px;
+            }
+
+            .heading-section {
+                margin-bottom: 40px;
+            }
+
+            .body-section {
+                margin-bottom: 40px;
+            } 
+
+            .testimonials-section .testimonial {
+                display: flex;
+                flex-direction: row;
+            } 
+
+        } 
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main-section">
+        <div class="heading-section">
+            <h1 class="primary-heading">Our Clients</h1>
+            <h2 class="secondary-heading">About Us </h2>
+            <hr>
+            <hr>
+        </div>
+        <div class="body-section">
+            Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's standard.
+        </div>
+
+        <div class="testimonials-section">
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/300/09f/fff.png" alt="Avatar" />
+                <p class="arrow-moblie">&#9650</p>
+                <p class="arrow">&#9664</p>
+                <div class="testimonial-descrition">
+
+                    <p> " John Doe saved us from a web disaster. "</p>
+                    <div class="testimonial-secondary__descrition u-margin"> John Doe saved us from a web disaster John Doe saved us
+                        from a web disasterJohn Doe saved us from a web disaster John Doe saved us
+                        from a web disaster</div>
+                    <p> CEO at Mighty Schools.</p>
+                    <span class="testimonial-secondary__descrition">Chris Fox.</span>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
